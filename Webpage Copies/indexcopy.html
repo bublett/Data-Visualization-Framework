@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Project</title>
+
+    
+
+</head>
+<body>
+    <h1>Upload A csv File</h1>
+
+    <hr>
+    <br>
+    
+    <!--Creates a file upload button-->
+    <form method="POST" enctype="multipart/form-data">  <!--Sends a POST request to the server-->
+        {{form.hidden_tag()}}  <!--Protects From from CSRF Attacks??-->
+        {{form.file()}}  <!--Displays file field-->
+        {{form.submit()}}  <!--Displayed Upload field-->
+    </form>
+
+</body>
+</html>

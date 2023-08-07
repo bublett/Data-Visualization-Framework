@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+
+<style>
+  /* Add CSS styling for centering the image */
+  .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .image {
+      max-width: 1750px;
+      max-height: 1000px;
+      border: 2px solid black;
+  }
+
+  .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+</style>
+
+</head>
+
+<body>
+
+<BODY BGCOLOR="#c9f3ff"></BODY>  
+
+<footer class="w3-container w3-padding-64 w3-light-blue w3-center w3-large"></footer>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+
+    
+<!-- Header -->
+<header class="w3-panel w3-center image-container" style="padding:95px 16px">
+    
+  
+
+  <div class="w3-padding-32">
+    <h1>Final Bar Graph: </h1>
+
+    <!-- Display the bar graph image -->
+    <img src="{{ url_for('static', filename='images/BarGraph.png') }}" class="image"/>
+
+   
+            
+           <div class="button-container">
+
+            <!-- Go back home button -->
+            <form action="{{ url_for('home') }}" method="GET">
+                <input type="submit" value="Home">
+            </form>
+        </div>
+    </div>
+</header>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-blue w3-center w3-large" ></footer>
+
+</body>
+</html>
